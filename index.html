@@ -3,70 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
+    <title>Vikas Patil - Resume</title>
     <link rel="stylesheet" href="resume2.css">
 </head>
 <body>
     <div class="resume">
-        <div class="left-column">
-            <div class="profile">
-                <img src="Image2.jpg" alt="Profile Picture">
-                <h2>Vikas Patil</h2>
-                <p>Web Developer</p>
+        <header class="hero">
+            <img class="avatar" src="Image2.jpg" alt="Vikas Patil">
+            <div class="hero-text">
+                <h1>Vikas Patil</h1>
+                <p class="role">Web Developer</p>
+                <p class="contact">
+                    <span>Pune, India</span>
+                    <span><a href="mailto:patil.vikas6306@gmail.com">patil.vikas6306@gmail.com</a></span>
+                    <span>+91 9975176306</span>
+                    <span><a href="https://www.linkedin.com/in/vikas-patil-2739512ab/">LinkedIn</a></span>
+                    <span><a href="https://github.com/vikaspatil06">GitHub</a></span>
+                </p>
             </div>
-            <div class="contact-info">
-                <h3>Contact</h3>
-                <p>Email: patil.vikas6306@gmail.com</p>
-                <p>Phone: 9156356306</p>
-                <p>City: Pune</p>
-            </div>
+        </header>
 
-            <div class="skills">
-                <h3>Skills</h3>
-                <ul>
-                    <li>HTML & CSS</li>
-                    <li>JavaScript</li>
-                    <li>AWS</li>
-                    <li>Bootstrap</li>
-                    <li>Python</li>
-                </ul>
-            </div>
+        <main>
+            <section>
+                <h2>About</h2>
+                <p>A third-year B.Tech Computer Science student at Symbiosis Institute of Technology, Pune, who builds practical web software. I have shipped a Python learning platform, a responsive portfolio, and a loan-service website with an EMI calculator, and published research on AI-assisted programming tools.</p>
+            </section>
 
-            <div class="lang">
-                <h2>Languages</h2>
-                <ul>
-                    <li>English</li>
-                    <li>Hindi</li>
-                    <li>Marathi</li>
-                </ul>
-            </div>
-        </div>
-        <div class="right-column">
-            <div class="summary">
-                <h3>Professional Summary</h3>
-                <p>A passionate <b><span>Full Stack Developer</span></b> with a knack for building dynamic, high-performance web applications. With expertise in both front-end and back-end technologies, I bring a holistic approach to solving complex problems. My portfolio showcases a range of projects that highlight my skills in modern frameworks, databases, and cloud services. I thrive in collaborative environments and am always eager to tackle new challenges. Welcome to my digital playground!</p>
-            </div>
-            <div class="experience">
-                <h3>Work Experience</h3>
-                <div class="job">
-                    <h4>Web Developer Intern</h4>
-                    <p>Infeanet Digital Solution and </p>
-                    <p>June 24 - Present</p>
+            <section>
+                <h2>Experience</h2>
+                <article class="entry">
+                    <div class="entry-head">
+                        <h3>Web Developer Intern &mdash; Infeanet Digital Solutions and Web Media, Pune</h3>
+                        <span class="date">Jun 2024 &ndash; Aug 2024</span>
+                    </div>
                     <ul>
-                        <li>Developed portfolio website primarily using HTML and CSS.</li>
-                        <li>Created a login Page app using Android Studio.</li>
-                        <li>Clients included small- to medium-sized businesses and personal clients.</li>
+                        <li>Built responsive web pages with HTML, CSS, JavaScript and Bootstrap, adding animations and interactive icon effects to boost engagement.</li>
+                        <li>Collaborated on a group website project covering frontend logic, layout planning and deployment; the team placed Runner-Up in the internship&rsquo;s Group Project Competition.</li>
+                        <li>Applied insights from expert sessions on SQL, cybersecurity and Android development to project enhancements.</li>
                     </ul>
-                </div>
+                </article>
+            </section>
 
-            </div>
-            <div class="education">
-                <h3>Education</h3>
-                <p>Diploma in Computer Technology</p>
-                <p>SVCP ,Pune ,Maharashtra</p>
-                <p>2022-24</p>
-            </div>
-        </div>
+            <section>
+                <h2>Education</h2>
+                <article class="entry">
+                    <div class="entry-head">
+                        <h3>B.Tech, Computer Science and Engineering</h3>
+                        <span class="date">Sep 2025 &ndash; May 2028</span>
+                    </div>
+                    <p class="sub">Symbiosis Institute of Technology, Pune &mdash; 3rd Year</p>
+                </article>
+                <article class="entry">
+                    <div class="entry-head">
+                        <h3>Diploma in Computer Technology</h3>
+                        <span class="date">Aug 2022 &ndash; May 2025</span>
+                    </div>
+                    <p class="sub">Sou. Venutai Chavan Polytechnic, Pune</p>
+                </article>
+            </section>
+
+            <section>
+                <h2>Projects</h2>
+                <article class="entry">
+                    <div class="entry-head">
+                        <h3>Skillzify v2 &mdash; Python Learning Platform</h3>
+                        <span class="date">Oct 2026</span>
+                    </div>
+                    <ul>
+                        <li>Progressive 16-lesson path with quizzes, coding challenges, XP, streaks and a progress dashboard. <a href="https://github.com/vikaspatil06/skillzify-v2">github.com/vikaspatil06/skillzify-v2</a></li>
+                        <li>In-browser Pyodide compiler with an AI backend for code and error explanations; mobile-usability pass.</li>
+                    </ul>
+                </article>
+                <article class="entry">
+                    <div class="entry-head">
+                        <h3>Personal Portfolio Website</h3>
+                        <span class="date">Dec 2023 &ndash; Feb 2024</span>
+                    </div>
+                    <ul>
+                        <li>Designed and deployed a modern, responsive portfolio with HTML, CSS, Bootstrap and JavaScript; 5 sections (About, Skills, Projects, Education, Contact) with smooth-scroll navigation and a WhatsApp CTA.</li>
+                    </ul>
+                </article>
+                <article class="entry">
+                    <div class="entry-head">
+                        <h3>Loan Website with EMI Calculator</h3>
+                        <span class="date">Aug 2024 &ndash; Oct 2024</span>
+                    </div>
+                    <ul>
+                        <li>Responsive loan-service site; JavaScript EMI calculator computing monthly installments from amount, interest and tenure, with Bootstrap UI and FAQ sections.</li>
+                    </ul>
+                </article>
+            </section>
+
+            <section>
+                <h2>Publications</h2>
+                <article class="entry">
+                    <div class="entry-head">
+                        <h3>AI-Driven Python Compiler &amp; Algorithm Flowchart Generator</h3>
+                        <span class="date">Mar 2025</span>
+                    </div>
+                    <p class="sub">International Journal of Research Publication and Reviews (IJRPR)</p>
+                </article>
+            </section>
+
+            <section>
+                <h2>Skills</h2>
+                <div class="chips">
+                    <span>HTML</span><span>CSS</span><span>JavaScript</span><span>C</span><span>C++</span><span>Java</span><span>Python</span><span>Bootstrap</span><span>Chrome Extensions API</span><span>Pyodide</span><span>MySQL</span><span>SQLite</span><span>Git / GitHub</span><span>VS Code</span>
+                </div>
+                <p class="sub">Languages: English &middot; Hindi &middot; Marathi</p>
+            </section>
+
+            <section>
+                <h2>Certificates</h2>
+                <ul class="certs">
+                    <li>Getting Started with Artificial Intelligence, IBM SkillsBuild <span class="date">(Aug 2025)</span></li>
+                    <li>Python Using AI Workshop <span class="date">(Jan 2025)</span></li>
+                    <li>Android Development Intern, Infeanet <span class="date">(Jul 2024)</span></li>
+                    <li>Core Java, Disha <span class="date">(Jun 2024)</span></li>
+                </ul>
+            </section>
+        </main>
     </div>
 </body>
 </html>
