@@ -1,88 +1,138 @@
+* { box-sizing: border-box; }
+
 body {
-    font-family: Arial, sans-serif;
-    line-height: 2.3;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    font-family: "Segoe UI", system-ui, -apple-system, Arial, sans-serif;
+    line-height: 1.6;
+    color: #1e293b;
+    background: #eef2f7;
 }
+
+a { color: #2563eb; text-decoration: none; }
+a:hover { text-decoration: underline; }
 
 .resume {
+    max-width: 880px;
+    margin: 32px auto;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(15, 23, 42, 0.10);
+    overflow: hidden;
+}
+
+/* Hero */
+.hero {
     display: flex;
-    max-width: 900px;
-    margin: 20px auto;
-    background: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    gap: 24px;
+    align-items: center;
+    padding: 36px 40px 28px;
+    background: linear-gradient(120deg, #0f2440 0%, #1d4ed8 100%);
+    color: #fff;
 }
 
-.left-column, .right-column {
-    padding: 20px;
-}
-
-.left-column {
-    width: 30%;
-    background: #2c3e50;
-    color: white;
-}
-
-.right-column {
-    width: 50%;
-}
-
-.profile img {
-    width: 100px;
-    height: 100px;
+.avatar {
+    width: 112px;
+    height: 112px;
     border-radius: 50%;
-    margin-bottom: 10px;
-    margin-left: 86px;
+    object-fit: cover;
+    border: 4px solid rgba(255, 255, 255, 0.85);
+    flex-shrink: 0;
 }
 
-.profile h2, .profile p {
-    margin: 10px 0;
-    text-align: center;
+.hero h1 {
+    margin: 0 0 4px;
+    font-size: 2.1rem;
+    letter-spacing: 0.5px;
 }
 
-.contact-info, .skills {
-    margin-top: 20px;
+.hero .role {
+    margin: 0 0 10px;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #bfdbfe;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
 }
 
-.contact-info h3, .skills h3, .summary h3, .experience h3, .education h3 {
-    margin-bottom: 10px;
-    color: #3498db;
+.hero .contact {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #dbeafe;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 16px;
 }
 
-.contact-info p, .skills ul, .summary p, .experience .job, .education p {
-    margin-bottom: 10px;
+.hero .contact a { color: #fff; }
+
+/* Sections */
+main { padding: 8px 40px 36px; }
+
+section { margin-top: 28px; }
+
+section h2 {
+    margin: 0 0 12px;
+    padding-bottom: 6px;
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #2563eb;
+    border-bottom: 2px solid #dbeafe;
 }
 
-.skills ul {
-    list-style: none;
-    padding: 0;
+section p { margin: 6px 0; }
+
+.entry { margin-bottom: 18px; }
+
+.entry-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 16px;
 }
 
-.skills ul li {
-    background: #34495e;
-    margin-bottom: 5px;
-    padding: 5px;
-    border-radius: 5px;
+.entry-head h3 {
+    margin: 0;
+    font-size: 1.05rem;
+    color: #0f2440;
 }
 
-span{
-    color: #3498db;
+.date {
+    font-size: 0.85rem;
+    color: #64748b;
+    white-space: nowrap;
 }
 
-.right-column h4 {
-    margin: 5px 0;
-    color: #3498db;
+.sub { color: #475569; font-size: 0.95rem; }
+
+ul { margin: 6px 0 0; padding-left: 20px; }
+li { margin-bottom: 4px; }
+
+.certs { list-style: none; padding: 0; }
+.certs li {
+    padding: 8px 0;
+    border-bottom: 1px solid #f1f5f9;
+}
+.certs li:last-child { border-bottom: none; }
+
+/* Skill chips */
+.chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 4px 0 12px; }
+
+.chips span {
+    padding: 5px 13px;
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: #1d4ed8;
+    background: #eff6ff;
+    border: 1px solid #bfdbfe;
+    border-radius: 999px;
 }
 
-.right-column .job {
-    margin-bottom: 20px;
-}
-
-.right-column .job p {
-    margin: 5px 0;
-}
-
-.right-column .job ul {
-    list-style: disc;
+@media (max-width: 640px) {
+    .resume { margin: 0; border-radius: 0; }
+    .hero { flex-direction: column; text-align: center; padding: 28px 20px 22px; }
+    .hero .contact { justify-content: center; }
+    main { padding: 4px 20px 28px; }
+    .entry-head { flex-direction: column; gap: 0; }
 }
